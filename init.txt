@@ -1,0 +1,7 @@
+we.csv
+wy.csv
+Średniej arytmetycznej
+Minimum
+Maksimum
+Mediany
+Średniej geometrycznej

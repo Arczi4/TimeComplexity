@@ -1,0 +1,92 @@
+WindowManager:
+    MainWindow:   
+
+<MainWindow>:
+    name: "Main"
+    canvas.before:
+        Rectangle:
+            pos: self.pos
+            size: self.size
+            source: 'background.jpg'
+    
+    FloatLayout:
+        Label:
+            text:"Zapisz nowy plik: "
+            font_size: (root.width**2 + root.height**2) / 15**4
+            outline_width: 2
+            outline_color: (255, 255, 100)
+            pos_hint: {"x":0.45, "top":1}
+            size_hint: 0.1, 0.1
+
+        Button:
+            pos_hint: {"x":0.4, "top":0.9}
+            size_hint: 0.2, 0.05
+            font_size: (root.width**2 + root.height**2) / 15**4
+            text: "Zapisz"
+            on_release:
+                root.zapisz_nowy()
+
+        Button:
+            pos_hint: {"x":0.27, "top":0.8}
+            size_hint: 0.2, 0.1
+            font_size: (root.width**2 + root.height**2) / 15**4
+            text: "Srednia arytm"
+            on_release:
+                root.srednia_arytm()
+        
+        Button:
+            pos_hint: {"x":0.50, "top":0.8}
+            size_hint: 0.2, 0.1
+            font_size: (root.width**2 + root.height**2) / 15**4
+            text: "Wykres sredniej"
+            on_release:
+                root.wykres_sredniej()
+        
+        Button:
+            pos_hint: {"x":0.27, "top":0.7}
+            size_hint: 0.2, 0.1
+            font_size: (root.width**2 + root.height**2) / 15**4
+            text: "Min"
+            on_release:
+                root.minimum()
+        
+        Button:
+            pos_hint: {"x":0.50, "top":0.7}
+            size_hint: 0.2, 0.1
+            font_size: (root.width**2 + root.height**2) / 15**4
+            text: "Wykres min"
+            on_release:
+                root.wykres_min()
+        
+        Button:
+            pos_hint: {"x":0.27, "top":0.6}
+            size_hint: 0.2, 0.1
+            font_size: (root.width**2 + root.height**2) / 15**4
+            text: "Max"
+            on_release:
+                root.maximum()
+        
+        Button:
+            pos_hint: {"x":0.50, "top":0.6}
+            size_hint: 0.2, 0.1
+            font_size: (root.width**2 + root.height**2) / 15**4
+            text: "Wykres max"
+            on_release:
+                root.wykres_max()
+
+        Button:
+            pos_hint: {"x":0.27, "top":0.5}
+            size_hint: 0.2, 0.1
+            font_size: (root.width**2 + root.height**2) / 15**4
+            text: "Mediana"
+            on_release:
+                root.mediana()
+
+        Button:
+            pos_hint: {"x":0.50, "top":0.5}
+            size_hint: 0.2, 0.1
+            font_size: (root.width**2 + root.height**2) / 15**4
+            text: "Wykres mediany"
+            on_release:
+                root.wykres_mediana()
+                
